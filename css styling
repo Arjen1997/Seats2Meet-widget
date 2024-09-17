@@ -1,0 +1,76 @@
+/*  Dit is de css boilerplate Stijling voor de Seats2Meet/cyberdigma widget*/
+
+/* Stijl voor de hoofd boekingswidget */
+c-lab-bookingwidget {
+    background-color: #f8f8f8; /* Iets lichtere achtergrond voor beter contrast */
+    border-radius: 10px;        /* Iets grotere afronding voor een soepelere look */
+    padding: 25px;              /* Meer ruimte voor betere indeling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe voor diepte */
+    display: flex;              /* Gebruik flexbox voor uitlijning */
+    flex-direction: column;     /* Zorg ervoor dat de inhoud verticaal wordt uitgelijnd */
+    align-items: center;        /* Centreer inhoud horizontaal */
+    gap: 20px;                  /* Voeg ruimte tussen interne elementen */
+}
+
+/* Stijl voor interne elementen indien nodig */
+c-lab-bookingwidget .some-class {
+    color: #333;                /* Zorg ervoor dat tekst goed leesbaar is */
+    background-color: #ffffff;  /* Witte achtergrond voor interne elementen */
+    border-radius: 24px !important; /* Zorg voor consistente afronding */
+    padding: 10px;              /* Voeg wat ruimte toe aan deze elementen */
+    width: 100%;                /* Neem de volledige breedte in binnen de widget */
+    max-width: 600px;           /* Beperk de maximale breedte voor leesbaarheid */
+    text-align: center;         /* Centreer de tekst */
+}
+
+/* Stijl voor knoppen binnen de widget */
+c-lab-bookingwidget button,
+.field-button,
+.c_lab-bw-button {
+    background-color: #fdb931 !important;  /* Kleur zoals gevraagd */
+    color: #2E4D41 !important;
+    border: none;
+    border-radius: 24px !important;  /* Afronding van 24px */
+    padding: 15px 30px;  /* Grotere padding voor een grotere knop */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: auto;
+    text-align: center;
+    font-size: 18px;  /* Grotere tekst voor de grotere knop */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover effect voor knoppen */
+c-lab-bookingwidget button:hover,
+.field-button:hover,
+.c_lab-bw-button:hover {
+    background-color: #e5a82c;  /* Iets donkerdere tint voor hover */
+    transform: translateY(-2px);
+}
+
+/* Active effect voor knoppen */
+c-lab-bookingwidget button:active,
+.field-button:active,
+.c_lab-bw-button:active {
+    background-color: #d99b1f;  /* Nog donkerdere tint voor actieve status */
+    transform: translateY(1px);
+}
+
+/* Stijl voor de uitgeschakelde status van c_lab-bw-button met is-success */
+.c_lab-bw-button.is-success.is-disabled {
+    background-color: #fdb93180 !important;  /* Dezelfde kleur met 50% transparantie */
+    color: white !important;
+    cursor: default !important;
+    opacity: 0.7;
+}
+
+/* Media query voor responsiviteit op kleinere schermen */
+@media (max-width: 768px) {
+    c-lab-bookingwidget button,
+    .field-button,
+    .c_lab-bw-button {
+        padding: 12px 24px;  /* Iets kleinere padding op mobiele apparaten */
+        font-size: 16px;  /* Iets kleinere tekstgrootte op mobiele apparaten */
+    }
+}
