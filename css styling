@@ -1,6 +1,5 @@
-/*  Dit is de css boilerplate Stijling voor de Seats2Meet/cyberdigma widget*/
-
 /* Stijl voor de hoofd boekingswidget */
+
 c-lab-bookingwidget {
     background-color: #f8f8f8; /* Iets lichtere achtergrond voor beter contrast */
     border-radius: 10px;        /* Iets grotere afronding voor een soepelere look */
@@ -55,14 +54,17 @@ c-lab-bookingwidget button:active,
 .c_lab-bw-button:active {
     background-color: #d99b1f;  /* Nog donkerdere tint voor actieve status */
     transform: translateY(1px);
+    color: #2E4D41 !important;
+    font-weight: bold; !important;
 }
 
 /* Stijl voor de uitgeschakelde status van c_lab-bw-button met is-success */
 .c_lab-bw-button.is-success.is-disabled {
-    background-color: #fdb93180 !important;  /* Dezelfde kleur met 50% transparantie */
-    color: white !important;
+    color: #2E4D41 !important;
+    font-size: 15px; !important; /* Iets kleinere tekstgrootte op mobiele apparaten */
     cursor: default !important;
     opacity: 0.7;
+    font-weight: bold; !important;
 }
 
 /* Media query voor responsiviteit op kleinere schermen */
@@ -71,6 +73,7 @@ c-lab-bookingwidget button:active,
     .field-button,
     .c_lab-bw-button {
         padding: 12px 24px;  /* Iets kleinere padding op mobiele apparaten */
-        font-size: 16px;  /* Iets kleinere tekstgrootte op mobiele apparaten */
+        font-size: 18px;  /* Iets kleinere tekstgrootte op mobiele apparaten */
+        font-weight: bold; !important;
     }
 }
